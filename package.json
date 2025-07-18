@@ -1,0 +1,36 @@
+{
+  "name": "mobile-test-automation",
+  "version": "1.0.0",
+  "description": "Android mobile test automation project using Appium and WebdriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js",
+    "test:local": "wdio run ./wdio.conf.js",
+    "test:browserstack": "BROWSERSTACK=true wdio run ./wdio.conf.js",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "keywords": [
+    "appium",
+    "mobile",
+    "testing",
+    "automation",
+    "android",
+    "webdriverio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@wdio/appium-service": "^8.32.0",
+    "@wdio/browserstack-service": "^8.32.0",
+    "@wdio/cli": "^8.32.0",
+    "@wdio/local-runner": "^8.32.0",
+    "@wdio/mocha-framework": "^8.32.0",
+    "@wdio/spec-reporter": "^8.32.0",
+    "appium": "^2.5.1",
+    "appium-uiautomator2-driver": "^3.0.4",
+    "chai": "^4.3.10",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4"
+  }
+}
